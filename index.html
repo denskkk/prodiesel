@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#E50914">
+    <meta name="description" content="ProDiesel - професійний дизель сервіс в Одесі. Ремонт ПНВТ, форсунок, систем ZEXEL VRZ, BOSCH, DENSO. Власний стенд, гарантія, досвід понад 10 років.">
+    <meta name="keywords" content="ремонт ПНВТ, дизель сервіс Одеса, Zexel VRZ, ремонт форсунок, діагностика паливної системи">
+    <title>ProDiesel - Дизель Сервіс в Одесі | Ремонт ПНВТ, ZEXEL VRZ</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-text">PRO<span class="logo-accent">DIESEL</span></span>
+                    <span class="logo-tagline">Дизель Сервіс</span>
+                </div>
+                <nav class="nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Головна</a></li>
+                        <li><a href="#services" class="nav-link">Послуги</a></li>
+                        <li><a href="#about" class="nav-link">Про нас</a></li>
+                        <li><a href="#reviews" class="nav-link">Відгуки</a></li>
+                        <li><a href="#contacts" class="nav-link">Контакти</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="tel:+380000000000" class="header-phone">
+                        <i class="fas fa-phone"></i>
+                        +38 (000) 000-00-00
+                    </a>
+                    <button class="btn btn-primary" onclick="openBookingModal()">
+                        Записатися
+                    </button>
+                </div>
+                <button class="burger-menu" id="burgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-title-main">ПРОФЕСІЙНИЙ</span>
+                    <span class="hero-title-accent">ДИЗЕЛЬ СЕРВІС</span>
+                </h1>
+                <p class="hero-subtitle">Ремонт і діагностика ПНВТ, форсунок та паливних систем</p>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <img src="img/zexel-vector-logo.png" alt="ZEXEL">
+                        <span>ZEXEL VRZ</span>
+                    </div>
+                    <div class="hero-feature">
+                        <img src="img/bosh-logo.png" alt="BOSCH">
+                        <span>BOSCH</span>
+                    </div>
+                    <div class="hero-feature">
+                        <img src="img/delphi-logo.png" alt="Delphi">
+                        <span>Delphi</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-lg" onclick="openBookingModal()">
+                        <i class="fas fa-calendar-check"></i>
+                        Записатися на діагностику
+                    </button>
+                    <button class="btn btn-secondary btn-lg" onclick="openPriceModal()">
+                        <i class="fas fa-tags"></i>
+                        Дізнатись ціну
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about-preview">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="about-preview" id="about-preview">
+        <div class="container">
+            <div class="about-preview-content">
+                <div class="about-preview-text">
+                    <h2 class="section-title">
+                        <span class="title-accent">PRO</span>DIESEL
+                    </h2>
+                    <p class="about-preview-description">
+                        Дизель сервіс у Одесі, який спеціалізується на ремонті та діагностиці паливних систем високого тиску. Ми працюємо з системами <strong>ZEXEL VRZ, DENSO, BOSCH, Delphi</strong>.
+                    </p>
+                    <p class="about-preview-description">
+                        Наш сервіс оснащений сучасним обладнанням, включаючи власний стенд для перевірки та калібрування паливних насосів. Використовуємо лише оригінальні запчастини та надаємо гарантію на всі види робіт.
+                    </p>
+                    <a href="about.html" class="btn btn-outline">Детальніше про нас</a>
+                </div>
+                <div class="about-preview-video">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Відео про нашу майстерню</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="section-title text-center">
+                Чому обирають <span class="title-accent">PRODIESEL</span>
+            </h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3 class="advantage-title">Власний стенд VRZ</h3>
+                    <p class="advantage-description">
+                        Професійне обладнання для тестування та калібрування паливних насосів високого тиску
+                    </p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3 class="advantage-title">Оригінальні запчастини</h3>
+                    <p class="advantage-description">
+                        Працюємо тільки з оригінальними комплектуючими від перевірених постачальників
+                    </p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="advantage-title">Гарантія якості</h3>
+                    <p class="advantage-description">
+                        Надаємо офіційну гарантію на всі види робіт та встановлені запчастини
+                    </p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="advantage-title">Досвід понад 10 років</h3>
+                    <p class="advantage-description">
+                        Команда сертифікованих майстрів з багаторічним досвідом роботи
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title text-center">
+                Наші <span class="title-accent">послуги</span>
+            </h2>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/pnvt-repair.png" alt="Ремонт ПНВТ">
+                        <div class="service-badge">ТОП</div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Ремонт ПНВТ</h3>
+                        <p class="service-description">
+                            Професійний ремонт паливних насосів високого тиску. Діагностика, розбирання, заміна зношених деталей, збирання та налаштування.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> ZEXEL VRZ</li>
+                            <li><i class="fas fa-check"></i> BOSCH</li>
+                            <li><i class="fas fa-check"></i> DENSO</li>
+                            <li><i class="fas fa-check"></i> Delphi</li>
+                        </ul>
+                        <div class="service-footer">
+                            <span class="service-price">від 3000 грн</span>
+                            <button class="btn btn-primary" onclick="openBookingModal('Ремонт ПНВТ')">
+                                Записатися
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/injector-repair.png" alt="Ремонт форсунок">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Ремонт форсунок</h3>
+                        <p class="service-description">
+                            Діагностика, очищення, заміна розпилювачів та ущільнень. Тестування на спеціалізованому стенді.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Common Rail</li>
+                            <li><i class="fas fa-check"></i> Механічні форсунки</li>
+                            <li><i class="fas fa-check"></i> П'єзо форсунки</li>
+                        </ul>
+                        <div class="service-footer">
+                            <span class="service-price">від 1500 грн</span>
+                            <button class="btn btn-primary" onclick="openBookingModal('Ремонт форсунок')">
+                                Записатися
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/diagnostics.png" alt="Діагностика паливної системи">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Діагностика паливної системи</h3>
+                        <p class="service-description">
+                            Комплексна діагностика паливної системи дизельного двигуна на сучасному обладнанні.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Комп'ютерна діагностика</li>
+                            <li><i class="fas fa-check"></i> Перевірка тиску</li>
+                            <li><i class="fas fa-check"></i> Аналіз роботи</li>
+                        </ul>
+                        <div class="service-footer">
+                            <span class="service-price">від 500 грн</span>
+                            <button class="btn btn-primary" onclick="openBookingModal('Діагностика')">
+                                Записатися
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/testing.png" alt="Тестування на стенді">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Тестування на стенді</h3>
+                        <p class="service-description">
+                            Перевірка продуктивності ПНВТ та форсунок на спеціалізованому стенді з детальним звітом.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Вимір продуктивності</li>
+                            <li><i class="fas fa-check"></i> Калібрування</li>
+                            <li><i class="fas fa-check"></i> Регулювання</li>
+                        </ul>
+                        <div class="service-footer">
+                            <span class="service-price">від 800 грн</span>
+                            <button class="btn btn-primary" onclick="openBookingModal('Тестування')">
+                                Записатися
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="services.html" class="btn btn-outline btn-lg">Всі послуги та ціни</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title text-center">
+                Відгуки <span class="title-accent">клієнтів</span>
+            </h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="review-info">
+                            <h4 class="review-name">Олександр М.</h4>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        Відмінний сервіс! Відремонтували ПНВТ на моєму Mitsubishi Pajero. Робота виконана якісно, швидко та за адекватною ціною. Рекомендую!
+                    </p>
+                    <div class="review-meta">
+                        <span class="review-car"><i class="fas fa-car"></i> Mitsubishi Pajero</span>
+                        <span class="review-date">10.11.2025</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="review-info">
+                            <h4 class="review-name">Ігор В.</h4>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        Професіонали своєї справи! Діагностували та відремонтували форсунки Zexel. Машина їде як нова. Дякую за якісну роботу!
+                    </p>
+                    <div class="review-meta">
+                        <span class="review-car"><i class="fas fa-car"></i> Toyota Land Cruiser</span>
+                        <span class="review-date">05.11.2025</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="review-info">
+                            <h4 class="review-name">Сергій К.</h4>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        Звернувся з проблемою запуску двигуна. Швидко знайшли причину - зношений ПНВТ. Відремонтували за день. Ціна, якість, швидкість - все на висоті!
+                    </p>
+                    <div class="review-meta">
+                        <span class="review-car"><i class="fas fa-car"></i> Nissan Patrol</span>
+                        <span class="review-date">28.10.2025</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-stats">
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Відремонтовано ПНВТ</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-label">Середня оцінка</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Клієнтів повертаються</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="section-title text-center">
+                Контакти <span class="title-accent">та запис</span>
+            </h2>
+            <div class="contacts-content">
+                <div class="contacts-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Адреса</h4>
+                            <p>м. Одеса, вул. Приклад, 123</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Телефон</h4>
+                            <p><a href="tel:+380000000000">+38 (000) 000-00-00</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telegram</h4>
+                            <p><a href="https://t.me/prodiesel" target="_blank">@prodiesel</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-viber"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Viber</h4>
+                            <p><a href="viber://chat?number=+380000000000">+38 (000) 000-00-00</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Графік роботи</h4>
+                            <p>Пн-Пт: 9:00 - 18:00<br>Сб: 9:00 - 15:00<br>Нд: вихідний</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts-form">
+                    <h3>Записатися на діагностику</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Ваше ім'я *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Телефон *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="car" placeholder="Марка/модель авто *" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Опишіть проблему" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i>
+                            Відправити заявку
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.123456789!2d30.7233095!3d46.4774996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDbCsDI4JzM5LjAiTiAzMMKwNDMnMjQuMCJF!5e0!3m2!1suk!2sua!4v1234567890"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-text">PRO<span class="logo-accent">DIESEL</span></span>
+                        <span class="logo-tagline">Дизель Сервіс</span>
+                    </div>
+                    <p class="footer-description">
+                        Професійний ремонт і діагностика паливних систем високого тиску в Одесі
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Послуги</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#pnvt">Ремонт ПНВТ</a></li>
+                        <li><a href="services.html#injectors">Ремонт форсунок</a></li>
+                        <li><a href="services.html#diagnostics">Діагностика</a></li>
+                        <li><a href="services.html#testing">Тестування на стенді</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Інформація</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Про компанію</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="#reviews">Відгуки</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакти</h4>
+                    <ul class="footer-contacts">
+                        <li><i class="fas fa-phone"></i> +38 (000) 000-00-00</li>
+                        <li><i class="fas fa-envelope"></i> info@prodiesel.com.ua</li>
+                        <li><i class="fas fa-map-marker-alt"></i> м. Одеса</li>
+                    </ul>
+                    <div class="footer-socials">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-viber"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ProDiesel. Всі права захищені.</p>
+                <p>Розробка сайту: <a href="#">WebStudio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('bookingModal')">&times;</span>
+            <h3 class="modal-title">Записатися на діагностику</h3>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Ваше ім'я *" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Телефон *" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="car" placeholder="Марка/модель авто *" required>
+                </div>
+                <div class="form-group">
+                    <select name="service">
+                        <option value="">Оберіть послугу</option>
+                        <option value="pnvt">Ремонт ПНВТ</option>
+                        <option value="injectors">Ремонт форсунок</option>
+                        <option value="diagnostics">Діагностика</option>
+                        <option value="testing">Тестування</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Опишіть проблему" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Відправити заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Price Modal -->
+    <div class="modal" id="priceModal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('priceModal')">&times;</span>
+            <h3 class="modal-title">Дізнатись ціну ремонту</h3>
+            <form id="priceForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Ваше ім'я *" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Телефон *" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="car" placeholder="Марка/модель авто *" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="problem" placeholder="Опишіть несправність *" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Отримати консультацію</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#E50914">
+    <meta name="description" content="Про дизель сервіс ProDiesel: досвід понад 10 років, професійна команда, сучасне обладнання. Офіційні партнери ZEXEL, BOSCH, DENSO.">
+    <meta name="keywords" content="дизель сервіс Одеса, ремонт ПНВТ, про компанію, обладнання">
+    <title>Про компанію | ProDiesel - Дизель Сервіс</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">PRO<span class="logo-accent">DIESEL</span></span>
+                        <span class="logo-tagline">Дизель Сервіс</span>
+                    </a>
+                </div>
+                <nav class="nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Головна</a></li>
+                        <li><a href="services.html" class="nav-link">Послуги</a></li>
+                        <li><a href="about.html" class="nav-link active">Про нас</a></li>
+                        <li><a href="blog.html" class="nav-link">Блог</a></li>
+                        <li><a href="index.html#contacts" class="nav-link">Контакти</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="tel:+380000000000" class="header-phone">
+                        <i class="fas fa-phone"></i>
+                        +38 (000) 000-00-00
+                    </a>
+                    <button class="btn btn-primary" onclick="openBookingModal()">
+                        Записатися
+                    </button>
+                </div>
+                <button class="burger-menu" id="burgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">
+                Про <span class="title-accent">PRODIESEL</span>
+            </h1>
+            <p class="page-subtitle">Ваш надійний партнер у світі дизельних технологій</p>
+        </div>
+    </section>
+
+    <!-- About Story -->
+    <section class="about-story">
+        <div class="container">
+            <div class="about-story-content">
+                <div class="about-story-text">
+                    <h2 class="section-title">Наша <span class="title-accent">історія</span></h2>
+                    <p>
+                        <strong>ProDiesel</strong> — це команда професіоналів, які присвятили своє життя дизельним технологіям. Наш шлях почався понад 10 років тому з невеликої майстерні та великої любові до дизельних двигунів.
+                    </p>
+                    <p>
+                        Сьогодні ми — один з провідних дизель-сервісів в Одесі, який спеціалізується на ремонті та діагностиці паливних систем високого тиску. Особлива увага приділяється системам <strong>ZEXEL, VRZ, BOSCH, DENSO та Delphi</strong>.
+                    </p>
+                    <p>
+                        За роки роботи ми відремонтували понад 500 паливних насосів та тисячі форсунок. Наші клієнти — це власники вантажівок, позашляховиків, комерційного транспорту та легкових дизельних автомобілів.
+                    </p>
+                    <div class="stats-inline">
+                        <div class="stat-item">
+                            <span class="stat-value">10+</span>
+                            <span class="stat-text">років досвіду</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">500+</span>
+                            <span class="stat-text">відремонтовано ПНВТ</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">95%</span>
+                            <span class="stat-text">клієнтів повертаються</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-story-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-industry"></i>
+                        <span>Наша майстерня</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title text-center">
+                Чому обирають <span class="title-accent">нас</span>
+            </h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Професіоналізм</h3>
+                    <p>Наші майстри мають багаторічний досвід роботи та постійно підвищують кваліфікацію на офіційних тренінгах виробників обладнання</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Сучасне обладнання</h3>
+                    <p>Власний стенд для тестування VRZ, діагностичне обладнання провідних виробників, спеціалізований інструмент</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Оригінальні запчастини</h3>
+                    <p>Працюємо тільки з перевіреними постачальниками оригінальних комплектуючих. Гарантуємо якість кожної деталі</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Гарантія якості</h3>
+                    <p>Офіційна гарантія на всі види робіт та встановлені запчастини. Ми впевнені в якості нашої роботи</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Швидкість виконання</h3>
+                    <p>Розуміємо цінність вашого часу. Стандартний ремонт виконуємо за 1-3 дні. Експрес-діагностика — за 2 години</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Чесність та прозорість</h3>
+                    <p>Детальна діагностика перед ремонтом. Узгодження всіх робіт та вартості. Без прихованих платежів</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment -->
+    <section class="equipment">
+        <div class="container">
+            <h2 class="section-title text-center">
+                Наше <span class="title-accent">обладнання</span>
+            </h2>
+            <p class="section-description">
+                Ми інвестуємо в найсучасніше обладнання, щоб забезпечити найвищу якість діагностики та ремонту
+            </p>
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-image">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Стенд для тестування ПНВТ</h3>
+                    <p>Професійний стенд для перевірки паливних насосів високого тиску під навантаженням. Дозволяє точно виміряти продуктивність, тиск та якість розпилу.</p>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-image">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Стенд для форсунок</h3>
+                    <p>Спеціалізований стенд для тестування та калібрування форсунок усіх типів, включаючи Common Rail та п'єзо-форсунки.</p>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-image">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Діагностичне обладнання</h3>
+                    <p>Мультимарочні сканери для комп'ютерної діагностики дизельних систем управління двигуном.</p>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-image">
+                        <i class="fas fa-shower"></i>
+                    </div>
+                    <h3>Ультразвукова ванна</h3>
+                    <p>Для глибокого очищення деталей від нагару, відкладень та забруднень без механічного впливу.</p>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-image">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Спеціалізований інструмент</h3>
+                    <p>Повний комплект оригінального інструменту для розбирання та збирання ПНВТ та форсунок різних виробників.</p>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-image">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Вимірювальне обладнання</h3>
+                    <p>Прецизійні мікрометри, індикатори, манометри для контролю геометрії та параметрів деталей.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="partners">
+        <div class="container">
+            <h2 class="section-title text-center">
+                Наші <span class="title-accent">партнери</span>
+            </h2>
+            <p class="section-description">
+                Ми працюємо з офіційними дистриб'юторами провідних виробників дизельних систем
+            </p>
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <span>ZEXEL</span>
+                    </div>
+                    <p>Офіційний партнер ZEXEL. Доступ до оригінальних запчастин та технічної документації.</p>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <span>BOSCH</span>
+                    </div>
+                    <p>Сертифіковані майстри з ремонту систем BOSCH. Використання оригінального обладнання.</p>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <span>DENSO</span>
+                    </div>
+                    <p>Авторизований сервісний центр DENSO. Гарантія якості ремонту та запчастин.</p>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <span>Delphi</span>
+                    </div>
+                    <p>Офіційний партнер Delphi Technologies. Доступ до новітніх технологій та навчання.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team">
+        <div class="container">
+            <h2 class="section-title text-center">
+                Наша <span class="title-accent">команда</span>
+            </h2>
+            <p class="section-description">
+                Професіонали, які щодня працюють над вашим комфортом та безпекою
+            </p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Андрій Петренко</h3>
+                    <span class="member-position">Керівник сервісу</span>
+                    <p>15 років досвіду в діагностиці та ремонті дизельних систем. Сертифікований спеціаліст BOSCH.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Олег Коваленко</h3>
+                    <span class="member-position">Провідний механік</span>
+                    <p>12 років роботи з системами ZEXEL/VRZ. Експерт з ремонту ПНВТ та форсунок.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Дмитро Сидоренко</h3>
+                    <span class="member-position">Діагност</span>
+                    <p>10 років у діагностиці електронних систем управління двигуном. Сертифікат DENSO.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="values">
+        <div class="container">
+            <h2 class="section-title text-center">
+                Наші <span class="title-accent">цінності</span>
+            </h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <div class="value-number">01</div>
+                    <h3>Якість понад усе</h3>
+                    <p>Ми не йдемо на компроміси в питаннях якості. Кожна деталь, кожна операція — виконуються бездоганно.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-number">02</div>
+                    <h3>Чесність</h3>
+                    <p>Говоримо правду про стан вашого авто. Не нав'язуємо зайві послуги. Працюємо прозоро.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-number">03</div>
+                    <h3>Професіоналізм</h3>
+                    <p>Постійно вдосконалюємо навички, слідкуємо за новими технологіями, інвестуємо в обладнання.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-number">04</div>
+                    <h3>Відповідальність</h3>
+                    <p>Беремо відповідальність за результат. Гарантуємо якість своєї роботи та стоїмо за свої слова.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Готові довірити свій автомобіль професіоналам?</h2>
+                <p>Зателефонуйте нам або завітайте до нашого сервісу — ми з радістю проконсультуємо вас</p>
+                <div class="cta-buttons">
+                    <a href="tel:+380000000000" class="btn btn-primary btn-lg">
+                        <i class="fas fa-phone"></i>
+                        Зателефонувати
+                    </a>
+                    <button class="btn btn-secondary btn-lg" onclick="openBookingModal()">
+                        <i class="fas fa-calendar-check"></i>
+                        Записатися на прийом
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-text">PRO<span class="logo-accent">DIESEL</span></span>
+                        <span class="logo-tagline">Дизель Сервіс</span>
+                    </div>
+                    <p class="footer-description">
+                        Професійний ремонт і діагностика паливних систем високого тиску в Одесі
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Послуги</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#pnvt">Ремонт ПНВТ</a></li>
+                        <li><a href="services.html#injectors">Ремонт форсунок</a></li>
+                        <li><a href="services.html#diagnostics">Діагностика</a></li>
+                        <li><a href="services.html#testing">Тестування на стенді</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Інформація</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Про компанію</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="index.html#reviews">Відгуки</a></li>
+                        <li><a href="index.html#contacts">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакти</h4>
+                    <ul class="footer-contacts">
+                        <li><i class="fas fa-phone"></i> +38 (000) 000-00-00</li>
+                        <li><i class="fas fa-envelope"></i> info@prodiesel.com.ua</li>
+                        <li><i class="fas fa-map-marker-alt"></i> м. Одеса</li>
+                    </ul>
+                    <div class="footer-socials">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-viber"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ProDiesel. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('bookingModal')">&times;</span>
+            <h3 class="modal-title">Записатися на діагностику</h3>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Ваше ім'я *" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Телефон *" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="car" placeholder="Марка/модель авто *" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Опишіть проблему" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Відправити заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

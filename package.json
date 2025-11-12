@@ -1,0 +1,19 @@
+{
+  "name": "prodiesel-website",
+  "version": "1.0.0",
+  "description": "Сайт для дизель сервісу ProDiesel - ремонт ПНВТ, форсунок, діагностика",
+  "scripts": {
+    "start": "npx http-server -p 8000 -o",
+    "dev": "npx http-server -p 8000"
+  },
+  "keywords": [
+    "prodiesel",
+    "diesel",
+    "repair",
+    "ПНВТ",
+    "форсунки",
+    "Одеса"
+  ],
+  "author": "ProDiesel Team",
+  "license": "MIT"
+}

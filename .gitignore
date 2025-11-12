@@ -1,0 +1,23 @@
+# Ігноруємо системні файли
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ігноруємо редактори
+.vscode/
+.idea/
+*.sublime-*
+
+# Ігноруємо тимчасові файли
+*.tmp
+*.log
+*.swp
+*~
+
+# Ігноруємо node_modules якщо буде використовуватись
+node_modules/
+package-lock.json
+
+# Ігноруємо конфіги з чутливими даними
+.env
+config.php

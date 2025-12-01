@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#E50914">
+    <meta name="description" content="Галерея робіт ProDiesel - фото та відео ремонту форсунок, ТНВД, Common Rail. Механічні форсунки, грузові форсунки.">
+    <meta name="keywords" content="ремонт форсунок фото, ремонт ТНВД відео, Common Rail ремонт, механічні форсунки, грузові форсунки">
+    <title>Галерея робіт | ProDiesel - Дизель Сервіс</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">PRO<span class="logo-accent">DIESEL</span></span>
+                        <span class="logo-tagline">Дизель Сервіс</span>
+                    </a>
+                </div>
+                <nav class="nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Головна</a></li>
+                        <li><a href="services.html" class="nav-link">Послуги</a></li>
+                        <li><a href="gallery.html" class="nav-link active">Галерея</a></li>
+                        <li><a href="about.html" class="nav-link">Про нас</a></li>
+                        <li><a href="blog.html" class="nav-link">Блог</a></li>
+                        <li><a href="index.html#contacts" class="nav-link">Контакти</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="tel:+380660229615" class="header-phone">
+                        <i class="fas fa-phone"></i>
+                        066 022 96 15
+                    </a>
+                    <a href="tel:+380957759102" class="header-phone">
+                        <i class="fas fa-phone"></i>
+                        095 775 91 02
+                    </a>
+                    <button class="btn btn-primary" onclick="openBookingModal()">
+                        Записатися
+                    </button>
+                </div>
+                <button class="burger-menu" id="burgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">
+                Галерея <span class="title-accent">робіт</span>
+            </h1>
+            <p class="page-subtitle">Фото та відео нашої роботи з різними типами форсунок та ТНВД</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i>
+                    Всі роботи
+                </button>
+                <button class="filter-btn" data-filter="mechanical">
+                    <i class="fas fa-cog"></i>
+                    Механічні форсунки
+                </button>
+                <button class="filter-btn" data-filter="tnvd">
+                    <i class="fas fa-toolbox"></i>
+                    ТНВД
+                </button>
+                <button class="filter-btn" data-filter="commonrail">
+                    <i class="fas fa-microchip"></i>
+                    Common Rail
+                </button>
+                <button class="filter-btn" data-filter="truck">
+                    <i class="fas fa-truck"></i>
+                    Грузові форсунки
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mechanical Injectors Gallery -->
+    <section class="gallery-section" id="mechanical">
+        <div class="container">
+            <div class="gallery-header">
+                <div class="gallery-icon">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <div>
+                    <h2 class="gallery-title">Механічні форсунки</h2>
+                    <p class="gallery-subtitle">Ремонт та відновлення механічних форсунок від 800 грн</p>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Mechanical Injector 1 -->
+                <div class="gallery-item" data-category="mechanical">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Механічна форсунка<br>BOSCH</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Форсунка BOSCH</h4>
+                                <p>До та після ремонту</p>
+                                <span class="gallery-price">800 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mechanical Injector 2 -->
+                <div class="gallery-item" data-category="mechanical">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Механічна форсунка<br>ZEXEL</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Форсунка ZEXEL</h4>
+                                <p>Заміна розпилювача</p>
+                                <span class="gallery-price">850 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mechanical Injector 3 -->
+                <div class="gallery-item" data-category="mechanical">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Механічна форсунка<br>DENSO</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Форсунка DENSO</h4>
+                                <p>Повний ремонт</p>
+                                <span class="gallery-price">900 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mechanical Video -->
+                <div class="gallery-item gallery-item-video" data-category="mechanical">
+                    <div class="gallery-item-inner">
+                        <video controls>
+                            <source src="img/mechanical-repair.mp4" type="video/mp4">
+                            Ваш браузер не підтримує відео
+                        </video>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4><i class="fas fa-play-circle"></i> Процес ремонту</h4>
+                                <p>Механічна форсунка</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TNVD Gallery -->
+    <section class="gallery-section" id="tnvd">
+        <div class="container">
+            <div class="gallery-header">
+                <div class="gallery-icon">
+                    <i class="fas fa-toolbox"></i>
+                </div>
+                <div>
+                    <h2 class="gallery-title">ТНВД (Паливні насоси)</h2>
+                    <p class="gallery-subtitle">Ремонт та діагностика ТНВД різних типів від 3000 грн</p>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- TNVD 1 -->
+                <div class="gallery-item" data-category="tnvd">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>ТНВД ZEXEL VRZ</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>ZEXEL VRZ</h4>
+                                <p>Капітальний ремонт</p>
+                                <span class="gallery-price">від 10000 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TNVD 2 -->
+                <div class="gallery-item" data-category="tnvd">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>ТНВД BOSCH VP44</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>BOSCH VP44</h4>
+                                <p>Заміна плунжерної пари</p>
+                                <span class="gallery-price">від 5000 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TNVD 3 -->
+                <div class="gallery-item" data-category="tnvd">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>ТНВД BOSCH VE</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>BOSCH VE</h4>
+                                <p>Відновлення насоса</p>
+                                <span class="gallery-price">від 3000 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TNVD Video -->
+                <div class="gallery-item gallery-item-video" data-category="tnvd">
+                    <div class="gallery-item-inner">
+                        <video controls>
+                            <source src="img/tnvd-testing.mp4" type="video/mp4">
+                            Ваш браузер не підтримує відео
+                        </video>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4><i class="fas fa-play-circle"></i> Тестування на стенді</h4>
+                                <p>ТНВД після ремонту</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Rail Gallery -->
+    <section class="gallery-section" id="commonrail">
+        <div class="container">
+            <div class="gallery-header">
+                <div class="gallery-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <div>
+                    <h2 class="gallery-title">Common Rail форсунки</h2>
+                    <p class="gallery-subtitle">Ремонт форсунок Common Rail від 2000 грн</p>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Common Rail 1 -->
+                <div class="gallery-item" data-category="commonrail">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Common Rail<br>BOSCH</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>CR BOSCH</h4>
+                                <p>Електромагнітна форсунка</p>
+                                <span class="gallery-price">від 2000 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Common Rail 2 -->
+                <div class="gallery-item" data-category="commonrail">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Common Rail<br>DENSO</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>CR DENSO</h4>
+                                <p>Заміна розпилювача</p>
+                                <span class="gallery-price">від 2500 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Common Rail 3 -->
+                <div class="gallery-item" data-category="commonrail">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Common Rail<br>Delphi</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>CR Delphi</h4>
+                                <p>П'єзо форсунка</p>
+                                <span class="gallery-price">від 3000 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Common Rail 4 -->
+                <div class="gallery-item" data-category="commonrail">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Common Rail<br>Continental</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>CR Continental</h4>
+                                <p>Повний ремонт</p>
+                                <span class="gallery-price">від 2800 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Common Rail Video 1 -->
+                <div class="gallery-item gallery-item-video" data-category="commonrail">
+                    <div class="gallery-item-inner">
+                        <video controls>
+                            <source src="img/commonrail-repair.mp4" type="video/mp4">
+                            Ваш браузер не підтримує відео
+                        </video>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4><i class="fas fa-play-circle"></i> Ремонт CR</h4>
+                                <p>Заміна розпилювача</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Common Rail Video 2 -->
+                <div class="gallery-item gallery-item-video" data-category="commonrail">
+                    <div class="gallery-item-inner">
+                        <video controls>
+                            <source src="img/commonrail-testing.mp4" type="video/mp4">
+                            Ваш браузер не підтримує відео
+                        </video>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4><i class="fas fa-play-circle"></i> Тестування</h4>
+                                <p>Перевірка на стенді</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Truck Injectors Gallery -->
+    <section class="gallery-section" id="truck">
+        <div class="container">
+            <div class="gallery-header">
+                <div class="gallery-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <div>
+                    <h2 class="gallery-title">Грузові форсунки</h2>
+                    <p class="gallery-subtitle">Ремонт форсунок вантажного транспорту від 3000 грн</p>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Truck Injector 1 -->
+                <div class="gallery-item" data-category="truck">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Форсунка вантажна<br>BOSCH CR</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>BOSCH Грузова CR</h4>
+                                <p>Common Rail для вантажівок</p>
+                                <span class="gallery-price">від 3000 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Truck Injector 2 -->
+                <div class="gallery-item" data-category="truck">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Форсунка вантажна<br>DENSO</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>DENSO Грузова</h4>
+                                <p>Механічна форсунка</p>
+                                <span class="gallery-price">від 3500 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Truck Injector 3 -->
+                <div class="gallery-item" data-category="truck">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Форсунка вантажна<br>Delphi</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Delphi Грузова</h4>
+                                <p>CR форсунка вантажна</p>
+                                <span class="gallery-price">від 4000 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Truck Injector 4 -->
+                <div class="gallery-item" data-category="truck">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Форсунка вантажна<br>Cummins</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Cummins</h4>
+                                <p>Форсунка для вантажівки</p>
+                                <span class="gallery-price">від 4500 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Truck Video 1 -->
+                <div class="gallery-item gallery-item-video" data-category="truck">
+                    <div class="gallery-item-inner">
+                        <video controls>
+                            <source src="img/truck-injector-repair.mp4" type="video/mp4">
+                            Ваш браузер не підтримує відео
+                        </video>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4><i class="fas fa-play-circle"></i> Ремонт грузової</h4>
+                                <p>Форсунка вантажівки</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Truck Video 2 -->
+                <div class="gallery-item gallery-item-video" data-category="truck">
+                    <div class="gallery-item-inner">
+                        <video controls>
+                            <source src="img/truck-testing.mp4" type="video/mp4">
+                            Ваш браузер не підтримує відео
+                        </video>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4><i class="fas fa-play-circle"></i> Тестування</h4>
+                                <p>Перевірка грузової форсунки</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="upload-section">
+        <div class="container">
+            <div class="upload-content">
+                <i class="fas fa-info-circle"></i>
+                <h3>Хочете побачити більше робіт?</h3>
+                <p>Регулярно додаємо нові фото та відео в наші соціальні мережі. Підпишіться, щоб не пропустити!</p>
+                <div class="social-links">
+                    <a href="#" class="social-btn" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        Instagram
+                    </a>
+                    <a href="#" class="social-btn" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                        Telegram
+                    </a>
+                    <a href="#" class="social-btn" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                        Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Потрібен ремонт форсунок або ТНВД?</h2>
+                <p>Зателефонуйте нам або залиште заявку — проконсультуємо та підберемо оптимальне рішення</p>
+                <div class="cta-buttons">
+                    <a href="tel:+380660229615" class="btn btn-primary btn-lg">
+                        <i class="fas fa-phone"></i>
+                        066 022 96 15
+                    </a>
+                    <a href="tel:+380957759102" class="btn btn-primary btn-lg">
+                        <i class="fas fa-phone"></i>
+                        095 775 91 02
+                    </a>
+                    <button class="btn btn-secondary btn-lg" onclick="openBookingModal()">
+                        <i class="fas fa-envelope"></i>
+                        Залишити заявку
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-text">PRO<span class="logo-accent">DIESEL</span></span>
+                        <span class="logo-tagline">Дизель Сервіс</span>
+                    </div>
+                    <p class="footer-description">
+                        Професійний ремонт і діагностика паливних систем високого тиску в Одесі
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Послуги</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#pnvt">Ремонт ПНВТ</a></li>
+                        <li><a href="services.html#injectors">Ремонт форсунок</a></li>
+                        <li><a href="services.html#diagnostics">Діагностика</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Інформація</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Про компанію</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="index.html#reviews">Відгуки</a></li>
+                        <li><a href="index.html#contacts">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакти</h4>
+                    <ul class="footer-contacts">
+                        <li><i class="fas fa-phone"></i> 066 022 96 15</li>
+                        <li><i class="fas fa-phone"></i> 095 775 91 02</li>
+                        <li><i class="fas fa-envelope"></i> info@prodiesel.com.ua</li>
+                        <li><i class="fas fa-map-marker-alt"></i> вул. Балковська, 127, Одеса</li>
+                    </ul>
+                    <div class="footer-socials">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-viber"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ProDiesel. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('bookingModal')">&times;</span>
+            <h3 class="modal-title">Записатися на діагностику</h3>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Ваше ім'я *" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Телефон *" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="car" placeholder="Марка/модель авто *" required>
+                </div>
+                <div class="form-group">
+                    <select name="service">
+                        <option value="">Оберіть послугу</option>
+                        <option value="mechanical">Механічні форсунки</option>
+                        <option value="tnvd">ТНВД</option>
+                        <option value="commonrail">Common Rail</option>
+                        <option value="truck">Грузові форсунки</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Опишіть проблему" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Відправити заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content modal-image-content">
+            <span class="modal-close" onclick="closeModal('imageModal')">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div id="modalImageCaption"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
